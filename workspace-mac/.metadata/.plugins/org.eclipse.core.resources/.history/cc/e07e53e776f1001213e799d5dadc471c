@@ -1,0 +1,28 @@
+package View;
+
+import com.me.mygdxgame.MainClass;
+
+public class WorldHandler {
+	MainClass game;
+	
+	public int PostionArrayX;
+	public int PostionArrayY;
+
+	
+	public WorldHandler(MainClass game) {
+		// TODO Auto-generated constructor stub
+	this.game = game;
+	
+
+	}
+
+
+	public void update(float dt) {
+		// TODO Auto-generated method stub
+		PostionArrayX=9;
+		PostionArrayY=3;
+		
+		
+	}
+
+}

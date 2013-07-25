@@ -1,0 +1,73 @@
+package View;
+
+import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.GL10;
+import com.badlogic.gdx.graphics.OrthographicCamera;
+import com.badlogic.gdx.graphics.g2d.BitmapFont;
+import com.badlogic.gdx.graphics.g2d.SpriteBatch;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
+import com.badlogic.gdx.graphics.glutils.ShapeRenderer.ShapeType;
+
+public class WorldRender {
+	WorldHandler worlhandler;
+	
+	private OrthographicCamera camera;
+	
+	ShapeRenderer shapeRenderer;
+
+	// font stuff
+    SpriteBatch spriteBatch;
+    BitmapFont font;
+    CharSequence str = "0123456789";
+	
+	
+	public WorldRender(WorldHandler world) {
+		// TODO Auto-generated constructor stub
+	this.worlhandler = world;
+	
+	camera = new OrthographicCamera(50, 50);
+	
+	camera.position.set(25,25, 0);
+	camera.zoom = 1.0f;
+	camera.update();
+	
+	shapeRenderer = new ShapeRenderer();
+	shapeRenderer.setProjectionMatrix(camera.combined);
+	
+	spriteBatch = new SpriteBatch();
+	font = new BitmapFont(Gdx.files.internal("data/fonts/test.fnt"),Gdx.files.internal("data/fonts/test.png"),false);
+	
+
+	}
+
+	public void render() {
+		// TODO Auto-generated method stub
+		Gdx.gl.glClearColor(0, 0, 0, 1);
+		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
+		shapeRenderer.begin(ShapeType.Filled);
+
+		mapRender();
+		shapeRenderer.end();
+
+	}
+
+	private void mapRender() {
+		// TODO Auto-generated method stub
+		shapeRenderer.rect(0, 0, 2, 50);
+		shapeRenderer.rect(0, 48, 50, 2);
+		shapeRenderer.rect(48,0, 2, 50);
+		shapeRenderer.rect(0, 0, 50, 2);
+		
+		shapeRenderer.rect(16.33f, 0, 2, 50);
+		shapeRenderer.rect(32.666f, 0, 2, 50);
+		
+		shapeRenderer.rect(0, 17.33f, 50, 2);
+		shapeRenderer.rect(0, 32.33f, 50, 2);
+		
+		
+	}
+	private void renderX(){
+		shapeRenderer.rect(2, 40, 1, 5);
+	}
+
+}

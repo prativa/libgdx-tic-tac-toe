@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename package &apos;GameScreen&apos; to &apos;Sceene&apos;&#x0A;- Original project: &apos;tic-tac-toe&apos;&#x0A;- Original element: &apos;tic-tac-toe/src/GameScreen&apos;&#x0A;- Renamed element: &apos;tic-tac-toe/src/Sceene&apos;&#x0A;- Update references to refactored element&#x0A;- Update textual occurrences in comments and strings" description="Rename package &apos;GameScreen&apos;" flags="589830" hierarchical="false" id="org.eclipse.jdt.ui.rename.package" input="/src&lt;GameScreen" name="Sceene" qualified="false" references="true" stamp="1374263529032" textual="false" version="1.0"/>
+</session>

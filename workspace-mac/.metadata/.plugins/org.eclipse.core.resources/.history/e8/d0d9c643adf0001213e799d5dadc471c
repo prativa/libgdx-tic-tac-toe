@@ -1,0 +1,11 @@
+package View;
+
+public class WorldRender {
+	WorldHandler worlhandler;
+	
+	public WorldRender() {
+		// TODO Auto-generated constructor stub
+	this.worlhandler = worlhandler;
+	}
+
+}

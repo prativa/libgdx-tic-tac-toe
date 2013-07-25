@@ -1,0 +1,19 @@
+package View;
+
+import com.me.mygdxgame.MainClass;
+
+public class WorldHandler {
+	MainClass game;
+	
+	public WorldHandler(MainClass game) {
+		// TODO Auto-generated constructor stub
+	this.game = game;
+	}
+
+
+	public void update(float dt) {
+		// TODO Auto-generated method stub
+		
+	}
+
+}
