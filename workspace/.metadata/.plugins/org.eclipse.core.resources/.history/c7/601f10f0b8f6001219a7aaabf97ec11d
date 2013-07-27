@@ -52,11 +52,11 @@ public class WorldRender {
 		
 		
 		spriteBatch.begin();
-		
+		spriteBatch.enableBlending();
 		winnerTextRendering();
 		spriteBatch.end();
 
-	
+		
 		shapeRenderer.begin(ShapeType.Filled);
 		mapRender();
 		shapeRenderer.end();

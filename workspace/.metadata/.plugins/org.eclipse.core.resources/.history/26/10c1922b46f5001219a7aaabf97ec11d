@@ -51,48 +51,15 @@ public class WorldRender {
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 		
 		
-		spriteBatch.begin();
-		
-		winnerTextRendering();
-		spriteBatch.end();
-
-	
 		shapeRenderer.begin(ShapeType.Filled);
 		mapRender();
 		shapeRenderer.end();
 		
-		
 		shapeRenderer.begin(ShapeType.Line);
 		renderOX();
 		shapeRenderer.end();
-		
-		
 
 
-	}
-
-
-	private void winnerTextRendering() {
-		// TODO Auto-generated method stub
-
-       
-        switch (worldhandler.winner) {
-        case 0:
-        	//due nothing
-        	break;
-		case 1:
-			font.setScale(0.4f, 1);
-			font.draw(spriteBatch, "the winner is player 1", 70, 200);
-			font.draw(spriteBatch, "H 	for new game", 70, 100);
-			break;
-		case 2:
-			font.setScale(0.4f, 1);
-			font.draw(spriteBatch, "the winner is player 2", 70, 200);
-			font.draw(spriteBatch, "H 	for new game", 70, 100);
-
-			break;
-			
-		}
 	}
 
 
