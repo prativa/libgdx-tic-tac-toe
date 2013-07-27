@@ -51,10 +51,13 @@ public class WorldRender {
 		Gdx.gl.glClear(GL10.GL_COLOR_BUFFER_BIT);
 		
 		
-	
+		spriteBatch.begin();
+		
+		winnerTextRendering();
+		spriteBatch.end();
 
+	
 		shapeRenderer.begin(ShapeType.Filled);
-		shapeRenderer.setColor(99, 0, 0, 1);
 		mapRender();
 		shapeRenderer.end();
 		
@@ -62,12 +65,6 @@ public class WorldRender {
 		shapeRenderer.begin(ShapeType.Line);
 		renderOX();
 		shapeRenderer.end();
-		
-spriteBatch.begin();
-		
-		winnerTextRendering();
-		spriteBatch.end();
-
 		
 		
 

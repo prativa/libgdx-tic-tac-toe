@@ -54,7 +54,7 @@ public class WorldRender {
 	
 
 		shapeRenderer.begin(ShapeType.Filled);
-		shapeRenderer.setColor(99, 0, 0, 1);
+		shapeRenderer.setColor(0, 0, 0, 1);
 		mapRender();
 		shapeRenderer.end();
 		
