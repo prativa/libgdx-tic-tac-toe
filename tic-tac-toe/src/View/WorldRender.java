@@ -2,6 +2,7 @@ package View;
 
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.graphics.Camera;
 import com.badlogic.gdx.graphics.GL10;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.graphics.g2d.BitmapFont;
@@ -63,7 +64,7 @@ public class WorldRender {
 		renderOX();
 		shapeRenderer.end();
 		
-spriteBatch.begin();
+		spriteBatch.begin();
 		
 		winnerTextRendering();
 		spriteBatch.end();
@@ -85,14 +86,14 @@ spriteBatch.begin();
         	break;
 		case 1:
 			font.setScale(0.4f, 1);
-			font.draw(spriteBatch, "the winner is player 1", 70, 200);
-			font.draw(spriteBatch, "H 	for new game", 70, 100);
+			font.draw(spriteBatch, "The winner is player 1", Gdx.graphics.getWidth() /2 - font.getBounds("the winner is player 1").width/2, Gdx.graphics.getHeight() /2+ font.getBounds("the winner is player 1").height);
+			font.draw(spriteBatch, "H 	for new game",  Gdx.graphics.getWidth() /2 - font.getBounds("the winner is player 1").width/2, Gdx.graphics.getHeight() /2);
 			break;
 		case 2:
 			font.setScale(0.4f, 1);
-			font.draw(spriteBatch, "the winner is player 2", 70, 200);
-			font.draw(spriteBatch, "H 	for new game", 70, 100);
-
+			font.draw(spriteBatch, "The winner is player 2", Gdx.graphics.getWidth() /2 - font.getBounds("the winner is player 1").width/2, Gdx.graphics.getHeight() /2+ font.getBounds("the winner is player 1").height);
+			font.draw(spriteBatch, "H 	for new game",  Gdx.graphics.getWidth() /2 - font.getBounds("the winner is player 1").width/2, Gdx.graphics.getHeight() /2);
+		
 			break;
 			
 		}
