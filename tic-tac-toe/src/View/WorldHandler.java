@@ -6,7 +6,7 @@ import com.me.mygdxgame.MainClass;
 public class WorldHandler {
 	MainClass game;
 
-	int[] positionItem = new int[9];
+	public int[] positionItem = new int[9];
 	public int winner = 0;
 
 	public WorldHandler(MainClass game) {

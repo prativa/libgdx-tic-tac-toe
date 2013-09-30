@@ -1,6 +1,7 @@
 package View;
 
 import com.badlogic.gdx.Gdx;
+import com.badlogic.gdx.Input;
 import com.badlogic.gdx.graphics.OrthographicCamera;
 import com.badlogic.gdx.math.Vector3;
 
@@ -29,6 +30,11 @@ public class InputProcessor implements com.badlogic.gdx.InputProcessor {
 	@Override
 	public boolean keyUp(int keycode) {
 		// TODO Auto-generated method stub
+		if (keycode == Input.Keys.H) {
+			for(int i=0;i<game.positionItem.length;i++){
+				game.positionItem[i]=99;
+			}
+		}
 		return false;
 	}
 

@@ -4,9 +4,9 @@
 <fullyQualifiedTypeName name="com.badlogic.gdx.InputProcessor"/>
 <fullyQualifiedTypeName name="Sceene.GameScreen"/>
 <fullyQualifiedTypeName name="com.badlogic.gdx.graphics.OrthographicCamera"/>
-<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Camera"/>
 <fullyQualifiedTypeName name="View.WorldRender"/>
 <fullyQualifiedTypeName name="View.WorldHandler"/>
 <fullyQualifiedTypeName name="View.InputProcessor"/>
+<fullyQualifiedTypeName name="com.badlogic.gdx.graphics.Camera"/>
 <fullyQualifiedTypeName name="com.badlogic.gdx.Gdx"/>
 </qualifiedTypeNameHistroy>
